@@ -4,7 +4,7 @@ Existe una falta de herramientas interactivas que permitan visualizar las operac
 ### Objetivos generales.
 Desarrollar un entorno claro en donde tanto alumnos como profesores puedan experimentar o comprobar los resultados de operaciones vectoriales, facilitando así la comprensión de este tema.
 ### Objetivos específicos.
-- Definir funciones de operaciones de vectores en 2 dimensiones:suma, resta, módulo y producto punto.
+- Definir funciones de operaciones de vectores en 2 dimensiones: suma, resta, módulo y producto punto.
 - Crear menú interactivo para el prototipo.
 ### Integrantes/Roles
 - Damián Cabrera (Adrielazo): Programación lógica y administración de repositorio
