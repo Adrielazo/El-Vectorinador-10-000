@@ -7,7 +7,7 @@ Desarrollar un entorno claro en donde tanto alumnos como profesores puedan exper
 - Definir funciones de operaciones de vectores en 2 dimensiones: suma, resta, módulo y producto punto.
 - Crear menú interactivo para el prototipo.
 ### Integrantes/Roles
-- Damián Cabrera (Adrielazo): Programación lógica y administración de repositorio
+- Damián Cabrera (Adrielazo): Control de calidad (tester) y administración de repositorio
 - Vicente Manríquez (Pilsenshot): Programación de lógica.
 - Martín Urrutia (kourzed): Documentación y gestión.
-- Lukas Valenzuela (Lukakas16): Control de calidad (tester).
+- Lukas Valenzuela (Lukakas16): Programación de lógica.
