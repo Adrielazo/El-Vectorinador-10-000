@@ -7,7 +7,7 @@
 typedef struct {
 	float x;
 	float y;
-} Vector;//corregi el id porque no es necesario, dentro del archivo de funciones hay que definir los valores
+} Vector;
 
 Vector suma_vector(Vector a, Vector b);
 Vector resta_vector(Vector a, Vector b);
