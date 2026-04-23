@@ -19,5 +19,5 @@ float producto_punto(Vector a, Vector b){
 }
 
 float modulo_vector(Vector v){
-	return float{sqrt((v.x*v.x)+(v.y*v.y))};
+	return float{sqrt(producto_punto(v, v))};
 }
