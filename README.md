@@ -15,7 +15,7 @@ Desarrollar un entorno claro en donde tanto alumnos como profesores puedan exper
 - Menú sencillo e interactivo donde se pueden escojer las diferentes operaciones vectoriales que ofrece el programa.
 - Operaciones vectoriales de 2 vectores de 2 dimensiones:
   1. Suma y resta:
-	  * Estas dos funciones trabajan sumando y/o la componente x del primer vector(V1) y la del segundo vector(V2), lo mismo para la componente y, para luego mostrar en pantalla este resultado.
+	  * Estas dos funciones trabajan sumando y/o la componente x del primer vector (V1) y la del segundo vector (V2), lo mismo para la componente y, para luego mostrar en pantalla este resultado.
   2. Producto punto:
 	  * Multiplica la componente x de V1 y la de V2, así mismo para la componente y de ambos y luego suma estos dos resultados
   3. Módulo de vectores
