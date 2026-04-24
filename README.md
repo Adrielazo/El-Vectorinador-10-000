@@ -17,7 +17,7 @@ Desarrollar un entorno claro en donde tanto alumnos como profesores puedan exper
 
 ### Funcionalidades implementadas y pruebas realizadas.
 
-# Funcionalidades
+#### Funcionalidades
 - Menú sencillo e interactivo donde se pueden escojer las diferentes operaciones vectoriales que ofrece el programa.
 - Operaciones vectoriales de 2 vectores de 2 dimensiones:
   1. **Suma y resta**:
@@ -27,7 +27,7 @@ Desarrollar un entorno claro en donde tanto alumnos como profesores puedan exper
   3. **Módulo de vectores**:
 	  * Suma los cuadrados de la componente x e y de un mismo vector, al resultado de esta operación aplica raíz cuadrada para obtener la magnitud del vector.
 
-# Pruebas realizadas
+#### Pruebas realizadas
 - Se realizaron pruebas de casos "extremos" en la entrada de datos de la interfaz para poner a prueba las fallas del programa, como por ejemplo:
 	* Operaciones con números de más de 6 cifras, siendo enteros positivos y negativos.
 	* Ingresar valores no compatibles con las funciones mencionadas, incluyendo el menú.
