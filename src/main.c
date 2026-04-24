@@ -19,8 +19,9 @@ int main(){
 	printf("\n1.- Sumar vectores.");
 	printf("\n2.- Restar vectores.");
 	printf("\n3.- Producto punto.");
-	printf("\n4.- Calcular módulo.\n");
-	printf("\n5.- Modificar vector.\n");
+	printf("\n4.- Calcular módulo.");
+	printf("\n5.- Modificar vector.");
+	printf("\n0.- Salir.");
 	scanf("%d",opcion);
 	switch opcion{
 		case 1:
@@ -41,7 +42,7 @@ int main(){
 		printf("WIP");
 		default:
 		printf("opción inválida.");
-	}
+	}while (opcion != 0);
 
 
 	free(v1);
