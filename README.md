@@ -49,3 +49,7 @@ Para poder ejecutar el Vectorinador en tu pc, se necesita utilizar un compilador
 
 ### Avance logrado y preparación hito 2.
 Hasta el momento en hito 1, hemos logrado el funcionamiento de las operaciones básicas de vectores en 2 dimensiones, tales como suma, resta, producto punto entre vectores y obtener módulo, junto a un menú interactivo para acceder a estas funciones. Respecto a lo planteado para hito 2, sería adaptar el código a c++ para poder hacer uso de la función vector que posee esta versión, lo cual facilitaría el proceso, funcionamiento y complejidad del código y agregar funciones clave de operaciones entre vectores. Otro enfoque sería aumentar de la cantidad de vectores y el límite de dimensiones de estos para poder realizar operaciones más complejas.
+
+### Referencias
+- Para las funciones #ifndef y #endif: https://learn.microsoft.com/es-es/cpp/preprocessor/hash-ifdef-and-hash-ifndef-directives-c-cpp?view=msvc-170
+- Sintaxis de markdown: https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
