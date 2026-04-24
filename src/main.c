@@ -20,7 +20,7 @@ int main(){
 	printf("\n2.- Restar vectores.");
 	printf("\n3.- Producto punto.");
 	printf("\n4.- Calcular módulo.\n");
-	printf()
+	printf("\n5.- Modificar vector.\n");
 	scanf("%d",opcion);
 	switch opcion{
 		case 1:
