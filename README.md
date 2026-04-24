@@ -8,7 +8,6 @@ Desarrollar un entorno claro en donde tanto alumnos como profesores puedan exper
 ### Objetivos específicos.
 - Definir funciones de operaciones de vectores en 2 dimensiones: suma, resta, módulo y producto punto.
 - Crear menú interactivo para el prototipo.
-- 
 ### Integrantes/Roles
 - **Damián Cabrera (Adrielazo)**: Control de calidad (tester) y administración de repositorio
 - **Vicente Manríquez (Pilsenshot)**: Programación de lógica.
