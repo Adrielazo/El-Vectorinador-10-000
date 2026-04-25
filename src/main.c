@@ -52,7 +52,7 @@ int main(){
 				printf("\nWIP\n");
 				break;
 			case 0:
-				printf("\nAdiós. :V\n");
+				printf("\nAdiós.\n");
 				break;
 			default:
 				printf("\nOpción inválida.\n");
