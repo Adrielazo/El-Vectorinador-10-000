@@ -37,7 +37,7 @@ Para poder ejecutar el Vectorinador en tu pc, se necesita utilizar un compilador
 1. Descargar los archivos en carpeta src, organizándolos una misma carpeta.
 2. Ingresar en la terminal (también conocida como consola o cmd) y abrir ruta del directorio, como por ejemplo:
 	1. cd Desktop
-	2. cd Vectorinador 
+	2. cd src
 3. Luego, ingresar el siguiente comando:
 	* gcc main.c vectorinador.c -o Vectorinador -lm
 4. Cuando compile exitosamente, se va a poder ejecutar en la misma consola con el siguiente comando:
