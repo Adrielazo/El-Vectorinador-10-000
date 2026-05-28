@@ -1,4 +1,4 @@
-#include "vectorinador20000.hpp"
+#include "vectorinador10000.hpp"
 
 //Se implementan funciones:
 
