@@ -3,6 +3,7 @@
 int main() {
     std::cout << "Bienvenido!" << std::endl;
     int opcion;
+    int operacion;
     while (true) {
         std::cout << "¿Qué te gustaría hacer?" << std::endl;
         std::cout << "1. Agregar un nuevo vector" << std::endl;
@@ -46,7 +47,6 @@ int main() {
                 std::cout << "4. Producto cruz" << std::endl;
                 std::cout << "5. Módulo de un vector" << std::endl;
                 std::cout << "6. Volver al menú principal" << std::endl;
-                int operacion;
                 std::cout << "Ingrese el número de la operación deseada: ";
                 std::cin >> operacion;
                 switch (operacion) {
@@ -108,14 +108,20 @@ int main() {
                         break;
                     
                     }
+                
+                    default: {
+                        std::cout << "Opción no válida. Volviendo al menú principal." << std::endl;
+                        break;
+                    }
+                }
                 break;
-            
-            }
+            }   
             case 6: {
+                std::cout << "este es el caso 6" << std::endl;
                 std::cout << "¡Hasta luego!" << std::endl;
                 return 0;
             }
-        }   
-     }
-}
+          
+        }
+    }
 }
