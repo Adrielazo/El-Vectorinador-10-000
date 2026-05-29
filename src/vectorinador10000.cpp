@@ -33,3 +33,7 @@ void Vector::modificar_vector(float nuevoX, float nuevoY, float nuevoZ) {
     Y = nuevoY;
     Z = nuevoZ;
 }
+
+Vector Vector::mult_escalar(float escalar) const {
+    return Vector(this->X * escalar, this->Y *escalar, this->Z * escalar);
+}
