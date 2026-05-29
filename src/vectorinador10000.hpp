@@ -13,11 +13,14 @@ class Vector{
         Vector operator+(const Vector& v) const;
         Vector operator-(const Vector& v) const;
         Vector mult_escalar(float escalar) const;
-        Vector productocruz(const Vector& v) const;
+        
         float productopunto(const Vector& v) const;
         float modulo() const;
+        Vector productocruz(const Vector& v) const;
         void imprimir_vector() const;
         void modificar_vector(float nuevoX, float nuevoY, float nuevoZ);
+        Vector unitario() const;
+        float angulo_entre(const Vector& v) const;
         
 };
-#endif  
+#endif 
