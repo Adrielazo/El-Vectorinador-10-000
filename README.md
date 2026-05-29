@@ -44,12 +44,14 @@ Respecto al menú de operaciones vectoriales tenemos:
 
 #### Pruebas realizadas:
 
+
 ### Cambios estructurales al migrar de C a C++:
 - Al migrar de C a C++ se implementó la biblioteca vector, facilitando el manejo de estas entidades.
 - Se utiliza la memoria interna del programa, evitando así el utilizar memoria dinámica y previniendo memory leaks.
 - El lenguaje entiende de mejor manera los procesos matemáticos, por lo que los números grandes (que anteriormente el programa tenía errores al procesarlos) ya no presentan un problema, gracias que los presenta en el formato de notación científica con e, evitando ahora errores previos.
 
 ### Descripción de clases:
+La clase vector encapsula las componentes (x, y, z), las cuales son privadas y evita que otro archivo pueda modificar el tipo de variable, es decir, estos valores se mantendrán en float. También engloba a las funciones (operaciones vectoriales), funcionando como una especie de molde para crear objetos que se comporten exactamente como un vector matemático.
 
 ### ¿Cómo ejecuto este programa en mi PC?
 Para poder ejecutar el Vectorinador en tu pc, se necesita utilizar un compilador compatible, en este caso se necesitará tener instalado el compilador g++, y el proceso de compilación y ejecución es el siguiente:
@@ -66,11 +68,13 @@ Para poder ejecutar el Vectorinador en tu pc, se necesita utilizar un compilador
 6. Para utilizar una opción, basta con ingresar el número que se ve asociado a dicha opción.
 7. Luego de ingresar los vectores deseados dentro de este menú principal, se puede ingresar a otro menú en la opción de "Operar vectores".
 8. En el menú de "Operar vectores" se encontrarán las diferentes operaciones vectoriales, las cuales fueron detalladas anteriormente en este documento.
-9. Finalmente, para finalizar la ejecución de Vectorinador, se debe devolver al menú principal e ingresar el número 8.
+9. Finalmente, para finalizar la ejecución de Vectorinador, se debe devolver al menú principal ingresando el número 6 e ingresar el número 5.
 
 ### Ejemplos de ejecución y resultados esperados:
 
+
 ### Avance logrado y pasos hacia Hito 3:
+
 
 ### Principales dificultades encontradas durante la migración del proyecto:
 - El cambio de sintaxis, teniendo que reescribir líneas de código de una manera distinta.
