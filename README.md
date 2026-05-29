@@ -87,7 +87,28 @@ Para poder ejecutar el Vectorinador en tu pc, se necesita utilizar un compilador
 8. En el menú de "Operar vectores" se encontrarán las diferentes operaciones vectoriales, las cuales fueron detalladas anteriormente en este documento.
 9. Finalmente, para finalizar la ejecución del programa, se debe devolver al menú principal ingresando el número 6 e ingresar el número 5.
 ### Ejemplos de ejecución y resultados esperados:
+<img width="375" height="225" alt="image" src="https://github.com/user-attachments/assets/df9a5d48-4a4a-4b31-9636-455f7481215d" />
 
+- Donde se deberá seleccionar una opción. Por ejemplo la opción 1:
+
+<img width="487" height="154" alt="image" src="https://github.com/user-attachments/assets/2fea29d5-8fad-4427-a565-bf547ed24087" />
+
+- Donde se puede crear un vector, en este caso se creó el vector (5, 4, 3). Luego de esto, muestra el menú principal nuevamente, donde se
+puede acceder al menú de operaciones vectoriales mediante la opción 4:
+
+<img width="464" height="308" alt="image" src="https://github.com/user-attachments/assets/7e078d85-0606-4abb-9e2e-a1ae6028c1d5" />
+
+- Podemos ver las diferentes operaciones vectoriales disponibles, en este caso se seleccionará la opción 5:
+
+<img width="623" height="158" alt="image" src="https://github.com/user-attachments/assets/276dbb44-12d0-4440-a02f-567a89b5ff5c" />
+
+- Deberemos elegir el vector con el que queremos trabajar, en este caso tiene índice 0, esta opción arroja el módulo del vector:
+
+<img width="623" height="158" alt="image" src="https://github.com/user-attachments/assets/5cb3e4e3-a368-4d87-869a-30e1c9984b51" />
+
+- Para dar por finalizada la ejecución del programa se debe elegir la opción 6:
+
+<img width="390" height="228" alt="image" src="https://github.com/user-attachments/assets/5a58887e-21b0-4584-b735-82bac3228eb9" />
 
 ### Avance logrado y pasos hacia Hito 3:
 Hemos logrado implementar todas las funciones y operaciones faltantes que teníamos previstas desde el hito 1 y otras más, además del correcto funcionamiento del menú y de las funciones. Actualizamos el menú para que sea más intuitivo, teniendo la posibilidad de registrar, modificar, eliminar y visualizar vectores en la memoria del programa, además de la implementación de un menú separado para la utilización de las operaciones vectoriales, haciendo que todo se vea más ordenado y accesible. Los próximos pasos hacia la siguiente etapa, sería crear el visualizador 3D con las herramientas que ofrece CMake, pudiendo representar los vectores junto a todas estas funciones en un plano de 3 dimensiones.
