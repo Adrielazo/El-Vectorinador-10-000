@@ -39,7 +39,7 @@ Desarrollar un entorno claro en donde tanto alumnos como profesores puedan exper
 	3. **Producto cruz:**
 		* Opera 2 vectores seleccionados mediante una matriz formada por las componentes de cada vector y vectores unitarios (i, j, k), obteniendo el determinante de esta, el cual se interpreta como las nuevas componentes del vector perpendicular al estos 2 vectores iniciales.
 	4. **Módulo del vector**:
-		* Suma los cuadrados de la componente x e y de un vector seleccionado, al resultado de esta operación aplica raíz cuadrada para obtener la magnitud del vector, luego este resultado se muestra en pantalla.
+		* Suma los cuadrados de la componente (x, y, z) de un vector seleccionado, al resultado de esta operación aplica raíz cuadrada para obtener la magnitud del vector, luego este resultado se muestra en pantalla.
 	5. **Volver al menú principal**
 
 #### Pruebas realizadas:
