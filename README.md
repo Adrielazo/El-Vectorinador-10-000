@@ -86,7 +86,10 @@ Para poder ejecutar el Vectorinador en tu pc, se necesita utilizar un compilador
 7. Luego de ingresar los vectores deseados dentro de este menú principal, se puede ingresar a otro menú en la opción de "Operar vectores".
 8. En el menú de "Operar vectores" se encontrarán las diferentes operaciones vectoriales, las cuales fueron detalladas anteriormente en este documento.
 9. Finalmente, para finalizar la ejecución del programa, se debe devolver al menú principal ingresando el número 6 e ingresar el número 5.
+
 ### Ejemplos de ejecución y resultados esperados:
+- Al ejecutar el Vectorinador, se encontrará en pantalla este menú:
+
 <img width="375" height="225" alt="image" src="https://github.com/user-attachments/assets/df9a5d48-4a4a-4b31-9636-455f7481215d" />
 
 - Donde se deberá seleccionar una opción. Por ejemplo la opción 1:
