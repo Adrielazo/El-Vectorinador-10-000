@@ -23,6 +23,7 @@ int main (){
         std::cout<<"3. Modificar un vector existente\n";
         std::cout<<"4. Operar con vectores\n";
         std::cout<<"5. Salir\n";
+        std::cout<<"6. Eliminar un vector\n";
         std::cout<<"Seleccione una opcion: ";
         std::cin>>opcion;
 
@@ -35,12 +36,13 @@ int main (){
                 std::cout<<"Ingrese la componente en Z: "; std::cin>>z;
                 listaVectores.push_back(Vector(x, y, z));
                 std::cout<<"¡Vector creado exitosamente!.\n";
-                break;
-            }
-            case 2: {
+                break; 
                 mostrarVector(listaVectores);
                 break;  
             } 
+            case 2: {
+                mostrarVector(listaVectores);
+            }
             case 3:{
                 if (listaVectores.empty()){
                     std::cout<<"No hay vectores para modificar.\n";
@@ -64,8 +66,9 @@ int main (){
             
             case 4:{
                 std::cout << "¿Que operacion deseas realizar?\n";
-                std::cout << "1. Suma de vectores\n" ;
-                std::cout << "2. Resta de vectores\n" ;
+                std::cout << "0. Multiplicacion por escalar\n";
+                std::cout << "1. Suma\n" ;
+                std::cout << "2. Resta\n" ;
                 std::cout << "3. Producto punto\n" ;
                 std::cout << "4. Producto cruz\n" ;
                 std::cout << "5. Modulo de un vector\n" ;
@@ -74,9 +77,29 @@ int main (){
                 std::cin >> operacion;
 
                 switch (operacion) {
+                    case 0: {
+                        if (listaVectores.empty()){
+                            std::cout<<"No hay vectores para multiplicar por un escalar.\n";
+                            break;
+                        }
+                        mostrarVector(listaVectores);
+                        size_t indice;
+                        float escalar;
+                        std::cout<<"Ingrese el indice del vector a multiplicar: "; std::cin>>indice;
+                        std::cout<<"Ingrese el valor del escalar: "; std::cin>>escalar;
+
+                        if(indice<listaVectores.size()){
+                            Vector resultado = listaVectores[indice].mult_escalar(escalar);
+                            std::cout<<"Resultado de la multiplicacion por escalar: ";
+                            resultado.imprimir_vector();
+                        } else{
+                            std::cout<<"Indice invalido. No se realizo la multiplicacion por escalar.\n";
+                        }
+                        break;
+                    }
                     case 1: {
-                        if (listaVectores.size() < 2){
-                            std::cout<<"Se necesitan al menos dos vectores para realizar la suma";
+                        if (listaVectores.size() < 1){
+                            std::cout<<"Se necesita al menos un vector para realizar la suma";
                             break;
                         }
                         mostrarVector(listaVectores);
@@ -94,8 +117,8 @@ int main (){
                     
                     }
                     case 2:{
-                        if (listaVectores.size() < 2){
-                            std::cout<<"Se necesitan al menos dos vectores para realizar la resta";
+                        if (listaVectores.size() < 1){
+                            std::cout<<"Se necesita al menos un vector para realizar la resta";
                             break;
                         }
                         mostrarVector(listaVectores);
@@ -113,8 +136,8 @@ int main (){
                         break;
                     }
                     case 3:{
-                        if (listaVectores.size() < 2){
-                            std::cout<<"Se necesitan al menos dos vectores para calcular el producto punto";
+                        if (listaVectores.size() < 1){
+                            std::cout<<"Se necesita al menos un vector para calcular el producto punto\n";
                             break;
                         }
                         mostrarVector(listaVectores);
@@ -172,17 +195,37 @@ int main (){
                         break;
                     }   
             }
+            }
             case 5:{
                 std::cout<<"¡Hasta luego!\n";
                 break;
             }
+            case 6:{
+                if (listaVectores.empty()){
+                    std::cout<<"No hay vectores para eliminar.\n";
+                    break;
+                }
+                mostrarVector(listaVectores);
+                size_t indice;
+                std::cout<<"Ingrese el indice del vector a eliminar: ";
+                std::cin>>indice;
+
+                if (indice < listaVectores.size()){
+                    listaVectores.erase(listaVectores.begin() + indice);
+                    std::cout<<"¡Vector eliminado exitosamente!.\n";   
+                } else{
+                    std::cout<<"Indice invalido. No se elimino ningun vector.\n";
+                }
+                break;
+            }
             default:{
-                std::cout<<"Opcion invalida. Por favor, seleccione una opcion del 1 al 5.\n";
+                std::cout<<"Opcion invalida. Por favor, seleccione una opcion del 1 al 6.\n";
                 break;
              }
         
-            }
+            
         }
     } while (opcion != 5); 
     return 0;
 }   
+ 
