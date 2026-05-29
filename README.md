@@ -67,7 +67,7 @@ Para poder ejecutar el Vectorinador en tu pc, se necesita utilizar un compilador
 	* ./Vectorinador
 5. ¡Listo! el programa se ejecutará correctamente y mostrará en pantalla un menú con varias opciones, donde se podrán ingresar vectores, modificarlos y varias opciones.
 6. Para utilizar una opción, basta con ingresar el número que se ve asociado a dicha opción.
-	* Nota: no se deben ingresar valores que no sean admitidos, tales como:
+	* **Nota:** no se deben ingresar valores que no sean admitidos, tales como:
 		* Letras.
 		* Carácteres no compatibles con el formato (: , ¨¨ # $ % etc...).
 7. Luego de ingresar los vectores deseados dentro de este menú principal, se puede ingresar a otro menú en la opción de "Operar vectores".
