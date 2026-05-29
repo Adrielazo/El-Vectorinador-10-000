@@ -20,27 +20,27 @@ Desarrollar un entorno claro en donde tanto alumnos como profesores puedan exper
 ### Funcionalidades implementadas y pruebas realizadas.
 
 #### Funcionalidades:
-- Menú sencillo e interactivo donde se pueden escoger diferentes opciones, tales como:
- 	1. **Registrar vectores:**
-		* Crea un nuevo vector, el cual es añadido a una lista que contiene todos los vectores creados.
-	2. **Visualizar vectores registrados:**
-		* Permite mostrar el pantalla el listado de vectores registrados en la memoria.
-	3. **Modificar vectores existentes:**
-		* Habilita la edición de los valores de cada componente de un vector seleccionado.
-	4. **Entrar al menú para realizar operaciones vectoriales:**
-		* Muestra en pantalla todas las operaciones vectoriales disponibles que se pueden realizar.
+Menú sencillo e interactivo donde se pueden escoger diferentes opciones, tales como:
+1. **Registrar vectores:**
+	* Crea un nuevo vector, el cual es añadido a una lista que contiene todos los vectores creados.
+2. **Visualizar vectores registrados:**
+	* Permite mostrar el pantalla el listado de vectores registrados en la memoria.
+3. **Modificar vectores existentes:**
+	* Habilita la edición de los valores de cada componente de un vector seleccionado.
+4. **Entrar al menú para realizar operaciones vectoriales:**
+	* Muestra en pantalla todas las operaciones vectoriales disponibles que se pueden realizar.
 
-- Respecto al menú de operaciones vectoriales tenemos:
-	1. **Suma y resta**:
-		* Estas dos funciones trabajan sumando y/o restando las componentes (x, y, z) de cada vector, guardando este resultado para mostrarlo en pantalla. 
-		* Funciones se pueden seleccionar por separado en el menú.
-	2. **Producto punto**:
-		* Multiplica cada componente de cada vector, luego suma cada resultado de estas multiplicaciones para sumarlas y poder mostrar este resultado en pantalla, el cual es de tipo escalar.
-	3. **Producto cruz:**
-		* Opera 2 vectores seleccionados mediante una matriz formada por las componentes de cada vector y vectores unitarios (i, j, k), obteniendo el determinante de esta, el cual se interpreta como las nuevas componentes del vector perpendicular al estos 2 vectores iniciales.
-	4. **Módulo del vector**:
-		* Suma los cuadrados de la componente (x, y, z) de un vector seleccionado, al resultado de esta operación aplica raíz cuadrada para obtener la magnitud del vector, luego este resultado se muestra en pantalla.
-	5. **Volver al menú principal**
+Respecto al menú de operaciones vectoriales tenemos:
+1. **Suma y resta**:
+	* Estas dos funciones trabajan sumando y/o restando las componentes (x, y, z) de cada vector, guardando este resultado para mostrarlo en pantalla. 
+	* Funciones se pueden seleccionar por separado en el menú.
+2. **Producto punto**:
+	* Multiplica cada componente de cada vector, luego suma cada resultado de estas multiplicaciones para sumarlas y poder mostrar este resultado en pantalla, el cual es de tipo escalar.
+3. **Producto cruz:**
+	* Opera 2 vectores seleccionados mediante una matriz formada por las componentes de cada vector y vectores unitarios (i, j, k), obteniendo el determinante de esta, el cual se interpreta como las nuevas componentes del vector perpendicular al estos 2 vectores iniciales.
+4. **Módulo del vector**:
+	* Suma los cuadrados de la componente (x, y, z) de un vector seleccionado, al resultado de esta operación aplica raíz cuadrada para obtener la magnitud del vector, luego este resultado se muestra en pantalla.
+5. **Volver al menú principal**
 
 #### Pruebas realizadas:
 
