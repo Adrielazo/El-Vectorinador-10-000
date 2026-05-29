@@ -47,7 +47,7 @@ Para poder ejecutar el Vectorinador en tu pc, se necesita utilizar un compilador
 
 ### Principales dificultades encontradas durante la migración del proyecto:
 - El cambio de sintaxis, teniendo que reescribir líneas de código de una manera distinta.
-- El uso de clases y la orientación a objetos que este lenguaje ofrece
+- El uso de clases y la orientación a objetos que este lenguaje ofrece.
 
 ### Referencias:
 - Para las funciones #ifndef y #endif: https://learn.microsoft.com/es-es/cpp/preprocessor/hash-ifdef-and-hash-ifndef-directives-c-cpp?view=msvc-170
