@@ -32,19 +32,32 @@ Menú sencillo e interactivo donde se pueden escoger diferentes opciones, tales 
 	* Muestra en pantalla todas las operaciones vectoriales disponibles que se pueden realizar.
 
 Respecto al menú de operaciones vectoriales tenemos:
-1. **Suma y resta**:
+1. **Producto por un escalar:**
+	* Multiplica un vector seleccionado del listado por un número escalar que debe ser ingresado a continuación.
+	* Fracciones deben ser ingresadas en formato decimal, con el valor exacto o uno aproximado, esto se debe a que el programa no acepta el carácter de slash (/).
+2. **Suma y resta**:
 	* Estas dos funciones trabajan sumando y/o restando las componentes (x, y, z) de cada vector, guardando este resultado para mostrarlo en pantalla. 
 	* Funciones se pueden seleccionar por separado en el menú.
-2. **Producto punto**:
+3. **Producto punto**:
 	* Multiplica cada componente de cada vector, luego suma cada resultado de estas multiplicaciones para sumarlas y poder mostrar este resultado en pantalla, el cual es de tipo escalar.
-3. **Producto cruz:**
-	* Opera 2 vectores seleccionados mediante una matriz formada por las componentes de cada vector y vectores unitarios (i, j, k), obteniendo el determinante de esta, el cual se interpreta como las nuevas componentes del vector perpendicular al estos 2 vectores iniciales.
-4. **Módulo del vector**:
+4. **Producto cruz:**
+	* Opera dos vectores seleccionados mediante una matriz formada por las componentes de cada vector y vectores unitarios (i, j, k), obteniendo el determinante de esta, el cual se interpreta como las nuevas componentes del vector perpendicular al estos dos vectores iniciales.
+5. **Módulo del vector**:
 	* Suma los cuadrados de la componente (x, y, z) de un vector seleccionado, al resultado de esta operación aplica raíz cuadrada para obtener la magnitud del vector, luego este resultado se muestra en pantalla.
-5. **Volver al menú principal**
+6. **Vector unitario:**
+	* Utiliza el módulo del vector para dividir cada componente del vector seleccionado por este valor, obteniendo un nuevo vector el cual corresponde al vector unitario.
+7. **Ángulo entre vectores:**
+	* Utiliza el resultado del producto entre dos vectores seleccionados, para luego dividir este valor por la multiplicación del módulo de ambos, para luego aplicar la función de arccos y así obteniendo el ángulo correspondiente entre estos dos.
+8. **Volver al menú principal**
 
 #### Pruebas realizadas:
-
+- Se realizaron pruebas de casos "extremos" en la entrada de datos de la interfaz para poner a prueba las fallas del programa, como por ejemplo:
+	* Operaciones con números de más de 6 cifras, siendo enteros positivos y negativos
+	* Ingresar valores no compatibles con las funciones mencionadas, incluyendo el menú.
+	* Números con varias cifras decimales.
+	* Eliminar/editar vectores cuando no existen elementos en memoria.
+	* Utilizar funciones cuando no existen elementos registrados.
+	* Operaciones con vectores nulos, es decir (0, 0, 0).
 
 ### Cambios estructurales al migrar de C a C++:
 - Al migrar de C a C++ se implementó la biblioteca vector, facilitando el manejo de estas entidades.
@@ -77,7 +90,7 @@ Para poder ejecutar el Vectorinador en tu pc, se necesita utilizar un compilador
 
 
 ### Avance logrado y pasos hacia Hito 3:
-
+Hemos logrado implementar todas las funciones y operaciones faltantes que teníamos previstas desde el hito 1 y otras más, además del correcto funcionamiento del menú y de las funciones. Actualizamos el menú para que sea más intuitivo, teniendo la posibilidad de registrar, modificar, eliminar y visualizar vectores en la memoria del programa, además de la implementación de un menú separado para la utilización de las operaciones vectoriales, haciendo que todo se vea más ordenado y accesible. Los próximos pasos hacia la siguiente etapa, sería crear el visualizador 3D con las herramientas que ofrece CMake, pudiendo representar los vectores junto a todas estas funciones en un plano de 3 dimensiones.
 
 ### Principales dificultades encontradas durante la migración del proyecto:
 - El cambio de sintaxis, teniendo que reescribir líneas de código de una manera distinta.
