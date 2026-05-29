@@ -22,8 +22,8 @@ int main (){
         std::cout<<"2. Ver todos los vectores\n";
         std::cout<<"3. Modificar un vector existente\n";
         std::cout<<"4. Operar con vectores\n";
-        std::cout<<"5. Salir\n";
-        std::cout<<"6. Eliminar un vector\n";
+        std::cout<<"5. Eliminar un vector\n";
+        std::cout<<"6. Salir\n";
         std::cout<<"Seleccione una opcion: ";
         std::cin>>opcion;
 
@@ -42,8 +42,10 @@ int main (){
             } 
             case 2: {
                 mostrarVector(listaVectores);
+                break;
             }
             case 3:{
+                mostrarVector(listaVectores);
                 if (listaVectores.empty()){
                     std::cout<<"No hay vectores para modificar.\n";
                     break;
@@ -72,7 +74,9 @@ int main (){
                 std::cout << "3. Producto punto\n" ;
                 std::cout << "4. Producto cruz\n" ;
                 std::cout << "5. Modulo de un vector\n" ;
-                std::cout << "6. Volver al menu principal\n" ;
+                std::cout << "6. Obtener vector unitario\n";
+                std::cout << "7. Calcular angulo entre dos vectores\n" ;
+                std::cout << "8. Volver al menu principal\n" ;
                 std::cout << "Ingrese el numero de la operacion deseada: ";
                 std::cin >> operacion;
 
@@ -186,21 +190,32 @@ int main (){
                         }
                         break;
                     }
-                    case 6:{
+                    case 7: {
+                        mostrarVector(listaVectores);
+                        int indice1, indice2;
+                        std::cout << "Ingrese el indice del primer vector: "; std::cin >> indice1;
+                        std::cout << "ingrese el indice del segundo vector: "; std::cin >> indice2;
+                        if (indice1 < listaVectores.size() && indice2 < listaVectores.size()) {
+                            float angulo = listaVectores[indice1].angulo_entre(listaVectores[indice2]);
+                            std::cout << "El angulo entre los dos vectores es: " << angulo << "°\n";
+                        } else {
+                            std::cout << "Uno o ambos indices son invalidos. No se realizo el calculo del angulo.\n";
+                        }
+                        break;
+
+
+                    }
+                    case 8:{
                         std::cout<<"Volviendo...\n";
                         break;
                     }
                     default:{
-                        std::cout<<"Opcion invalida. Por favor, seleccione una opcion del 1 al 6.\n";
+                        std::cout<<"Opcion invalida. Por favor, seleccione una opcion del 1 al 8.\n";
                         break;
                     }   
-            }
+            }break;
             }
             case 5:{
-                std::cout<<"¡Hasta luego!\n";
-                break;
-            }
-            case 6:{
                 if (listaVectores.empty()){
                     std::cout<<"No hay vectores para eliminar.\n";
                     break;
@@ -218,6 +233,11 @@ int main (){
                 }
                 break;
             }
+            case 6:{
+                std::cout<<"¡Hasta luego!\n";
+                
+                break;
+            }
             default:{
                 std::cout<<"Opcion invalida. Por favor, seleccione una opcion del 1 al 6.\n";
                 break;
@@ -225,7 +245,8 @@ int main (){
         
             
         }
-    } while (opcion != 5); 
+    } while (opcion != 6); 
     return 0;
 }   
+ 
  
