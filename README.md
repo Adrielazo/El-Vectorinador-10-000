@@ -21,7 +21,7 @@ Desarrollar un entorno claro en donde tanto alumnos como profesores puedan exper
 
 #### Funcionalidades:
 - Menú sencillo e interactivo donde se pueden escoger diferentes opciones, tales como:
-- 	1. **Registrar vectores:**
+ 	1. **Registrar vectores:**
 		* Crea un nuevo vector, el cual es añadido a una lista que contiene todos los vectores creados.
 	2. **Visualizar vectores registrados:**
 		* Permite mostrar el pantalla el listado de vectores registrados en la memoria.
