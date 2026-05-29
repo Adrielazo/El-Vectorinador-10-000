@@ -23,6 +23,7 @@ Desarrollar un entorno claro en donde tanto alumnos como profesores puedan exper
 Menú sencillo e interactivo donde se pueden escoger diferentes opciones, tales como:
 1. **Registrar vectores:**
 	* Crea un nuevo vector, el cual es añadido a una lista que contiene todos los vectores creados.
+	* Ingresar exclusivamente números, en caso de ser decimales, estos se deben ingresar con un punto (ejemplo: 2,1 -> 2.1).
 2. **Visualizar vectores registrados:**
 	* Permite mostrar el pantalla el listado de vectores registrados en la memoria.
 3. **Modificar vectores existentes:**
@@ -66,6 +67,9 @@ Para poder ejecutar el Vectorinador en tu pc, se necesita utilizar un compilador
 	* ./Vectorinador
 5. ¡Listo! el programa se ejecutará correctamente y mostrará en pantalla un menú con varias opciones, donde se podrán ingresar vectores, modificarlos y varias opciones.
 6. Para utilizar una opción, basta con ingresar el número que se ve asociado a dicha opción.
+	* Nota: no se deben ingresar valores que no sean admitidos, tales como:
+		* Letras.
+		* Carácteres no compatibles con el formato (: , ¨¨ # $ % etc...).
 7. Luego de ingresar los vectores deseados dentro de este menú principal, se puede ingresar a otro menú en la opción de "Operar vectores".
 8. En el menú de "Operar vectores" se encontrarán las diferentes operaciones vectoriales, las cuales fueron detalladas anteriormente en este documento.
 9. Finalmente, para finalizar la ejecución del programa, se debe devolver al menú principal ingresando el número 6 e ingresar el número 5.
