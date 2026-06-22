@@ -9,5 +9,10 @@
 
 - Como utilizar y operar con un vector en C++?
 
+
+- Estoy haciendo un proyecto en mi ramo de programación, estoy haciendo un software de visualizador de vectores en 3D y necesito que me ayudes a hacer una presentación del proyecto.
+Necesito que me ayudes a crear un guión para exponer nuestros avances en el proyecto, son tres hitos, en el primero hicimos un prototipo del código, en el segundo pasamos a c++ y añadimos más funcionalidades y en el tercero utilizamos qt para crear una interface de usuario.
+    * Respuesta: https://gemini.google.com/share/8cf5d83d0c55 
+
 ## Resumen:
-- En resumen, la IA fue utilizada para ayudarnos con la estructura del github y para resolver dudas respecto al lenguaje de programación de C++ y dudas sobre la construcción y formato del código, así también como ciertas correcciones del mismo.
+- En resumen, la IA fue utilizada para ayudarnos con la estructura del github y para resolver dudas respecto al lenguaje de programación de C++ y dudas sobre la construcción y formato del código, así también como ciertas correcciones del mismo, junto como ayuda para realizar la presentacion del proyecto.
