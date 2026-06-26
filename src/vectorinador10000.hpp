@@ -21,6 +21,9 @@ class Vector{
         void modificar_vector(float nuevoX, float nuevoY, float nuevoZ);
         Vector unitario() const;
         float angulo_entre(const Vector& v) const;
-        
+        float getX() const { return X; }
+        float getY() const { return Y; }
+        float getZ() const { return Z; }
+};
 };
 #endif 
