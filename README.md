@@ -34,8 +34,14 @@ Desarrollar un entorno claro en donde tanto alumnos como profesores puedan exper
 * Ingreso de elementos no aceptados por el programa (como letras o carácteres especiales).
 
 ### Evolución del proyecto desde Hito 1 hasta Hito 3:
+* **Hito 1:** El proyecto empezó en C siendo un programa ejecutable enteramente en consola, enfocado puramente en las matemáticas.
+* **Hito 2:** El código fue traducido a C++. Se implementó la biblioteca `vector` para facilitar el manejo de entidades y se empezó a utilizar la memoria interna del programa para evitar el uso de memoria dinámica y prevenir *memory leaks*. C++ mejoró el procesamiento matemático de números grandes presentándolos en notación científica, evitando errores previos.
+* **Hito 3:** Con la lógica de C++ ya estable, el código fue llevado a Qt Creator. Se abandonó la consola interactiva a favor de una interfaz de usuario (UI) completa con un motor de renderizado que permite visualizar los vectores en un espacio 2D y 3D, concretando la meta final del proyecto.
 
 ### Descripción de clases:
+* **Vector:** Encapsula las componentes `(x, y, z)`, las cuales son privadas, evitando que otro archivo modifique su tipo (se mantienen en `float`). Esta clase engloba todas las operaciones vectoriales, funcionando como un molde para crear objetos que se comportan como vectores matemáticos.
+* **Clases de Interfaz (MainWindow / Visualizador en Qt):** Son las responsables de inicializar la ventana, conectar las señales de los botones (interacciones del usuario) con el *backend* matemático de C++ y renderizar los modelos 2D y 3D en el *canvas* central.
+* **VectorCanvas:** Se encarga de "traducir" los vectores creados para poder visualizar en pantalla, dándoles forma, dirección y color.
 
 ### Descripción de Interfaz (UI):
 
