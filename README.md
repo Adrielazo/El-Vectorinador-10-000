@@ -50,6 +50,6 @@ Desarrollar un entorno claro en donde tanto alumnos como profesores puedan exper
 ### Conclusiones del proyecto:
 
 ### Referencias:
-- Para las funciones #ifndef y #endif: https://learn.microsoft.com/es-es/cpp/preprocessor/hash-ifdef-and-hash-ifndef-directives-c-cpp?view=msvc-170
-- Sintaxis de markdown: https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
-- Uso de vectores (cómo manejarlos, eliminación de contenido, etc...): https://en.cppreference.com/cpp/container/vector
+- Para el uso de directivas `#ifndef` y `#endif`: [Microsoft Learn](https://learn.microsoft.com/es-es/cpp/preprocessor/hash-ifdef-and-hash-ifndef-directives-c-cpp?view=msvc-170).
+- Sintaxis de Markdown para este archivo: [GitHub Markdown](https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+- Uso de la biblioteca `vector` en C++ (manejo y eliminación de contenido): [Vectores](https://en.cppreference.com/cpp/container/vector).
