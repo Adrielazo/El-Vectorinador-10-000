@@ -1,4 +1,4 @@
-    #include "vectorcanvas.h"
+#include "vectorcanvas.h"
 #include <QPainter>
 #include <QPainterPath>
 #include <cmath>
@@ -23,9 +23,9 @@ void VectorCanvas::setIndiceResaltado(int index) {
 }
 
 
-QPointF VectorCanvas::mundoAPantalla(double x, double z, const QPointF &origenPantalla) const {
+QPointF VectorCanvas::mundoAPantalla(double x, double y, const QPointF &origenPantalla) const {
     return QPointF(origenPantalla.x() + x * escala,
-                    origenPantalla.y() - z * escala);
+                    origenPantalla.y() - y * escala);
 }
 
 double VectorCanvas::calcularEscalaAutomatica() const {
@@ -35,7 +35,7 @@ double VectorCanvas::calcularEscalaAutomatica() const {
     for (const auto &v : *listaVectores) {
         maxComponente = std::max({maxComponente,
                                    (double)std::fabs(v.getX()),
-                                   (double)std::fabs(v.getZ())});
+                                   (double)std::fabs(v.getY())});
     }
 
    
@@ -83,10 +83,10 @@ void VectorCanvas::dibujarEjes(QPainter &painter, const QPointF &origenPantalla)
     
     painter.setPen(QPen(Qt::black, 2));
     painter.drawLine(QPointF(0, origenPantalla.y()), QPointF(width(), origenPantalla.y())); // eje X
-    painter.drawLine(QPointF(origenPantalla.x(), 0), QPointF(origenPantalla.x(), height())); // eje Z
+    painter.drawLine(QPointF(origenPantalla.x(), 0), QPointF(origenPantalla.x(), height())); // eje Y
 
     painter.drawText(QPointF(width() - 20, origenPantalla.y() - 8), "X");
-    painter.drawText(QPointF(origenPantalla.x() + 8, 15), "Z");
+    painter.drawText(QPointF(origenPantalla.x() + 8, 15), "Y");
     painter.drawText(QPointF(origenPantalla.x() + 6, origenPantalla.y() + 18), "0");
 
    
@@ -121,7 +121,7 @@ void VectorCanvas::paintEvent(QPaintEvent *) {
 
     for (size_t i = 0; i < listaVectores->size(); ++i) {
         const Vector &v = (*listaVectores)[i];
-        QPointF destino = mundoAPantalla(v.getX(), v.getZ(), origenPantalla);
+        QPointF destino = mundoAPantalla(v.getX(), v.getY(), origenPantalla);
 
         bool resaltado = ((int)i == indiceResaltado);
         QColor color = colores[i % 6];
