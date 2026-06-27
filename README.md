@@ -44,16 +44,26 @@ Desarrollar un entorno claro en donde tanto alumnos como profesores puedan exper
 * **VectorCanvas:** Se encarga de "traducir" los vectores creados para poder visualizar en pantalla, dándoles forma, dirección y color.
 
 ### Descripción de Interfaz (UI):
+La interfaz tiene como objetivo proveer un entorno accesible de "Panel de control + Canvas".
+* **Widgets principales:** Cuenta con cajas de texto para los inputs de coordenadas, un apartado para poder ver la memoria de vectores y una lista desplegable agrupando las distintas operaciones matemáticas.
+* **Flujo de uso:** El usuario interactúa con los menús laterales para registrar sus vectores. Al hacer clic en una operación, la interfaz envía los parámetros a las funciones de cálculo y proyecta gráficamente la operación resultante en el lienzo principal (visualizador 2D/3D).
 
 ### Separación entre lógica e interfaz:
+La clase Vector original de C++ y los archivos de cálculo matemático están desacoplados del entorno gráfico. La interfaz en Qt simplemente capta los datos de las cajas de texto, instancia los objetos desde la clase Vector, llama a las operaciones matemáticas (ej. calcular un producto cruz) y finalmente lee los resultados para poder "dibujar" las líneas y mostrar los valores resultantes por pantalla, sin realizar cálculos directamente en los elementos visuales.
 
 ### ¿Cómo ejecuto este programa en mi PC?
-
-### Ejemplos de ejecución y resultados esperados:
+Para poder ejecutar El Vectorinador 10000 en tu pc, deberás seguir los pasos a continuación:
+1. Descargar el repositorio en su computadora.
+2. Abrir **Qt Creator**.
+3. Seleccionar la opción de "Abrir proyecto" y cargar el archivo `.pro` o `CMakeLists.txt` del directorio.
+4. Seleccionar el compilador (Kit) configurado en Qt.
+5. Hacer clic en el botón **Run** (icono verde de "Play" o `Ctrl+R`). El entorno compilará la lógica en C++ junto a la interfaz y desplegará la ventana del programa automáticamente.
 
 ### Principales dificultades en la integración de la interfaz:
-
-### Conclusiones del proyecto:
+El mayor desafío de integración fue acoplar las estructuras de vectores de C++ nativo con el ecosistema y librerías gráficas de Qt para lograr un dibujado 2D y 3D (principalmente 3D) en tiempo real que fuera fluido y sin caídas.
+### Conclusiones del proyecto y posibles mejoras en un futuro:
+- Se logró la meta planteada superando las limitaciones del entorno de consola y el paso a un entorno de visualización gráfica.
+- Como mejora futura, la aplicación podría exportar los pasos matemáticos completos (el procedimiento de la matriz, la suma de componentes, etc.) a un archivo `.txt` de reporte, o incorporar animaciones que muestren las transformaciones de los vectores en tiempo real dentro del visualizador 3D.
 
 ### Referencias:
 - Para el uso de directivas `#ifndef` y `#endif`: [Microsoft Learn](https://learn.microsoft.com/es-es/cpp/preprocessor/hash-ifdef-and-hash-ifndef-directives-c-cpp?view=msvc-170).
