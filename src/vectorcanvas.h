@@ -23,10 +23,10 @@ private:
 
     double escala = 20.0; 
 
-    QPointF mundoAPantalla(double x, double z, const QPointF &origenPantalla) const;
+    QPointF mundoAPantalla(double x, double y, const QPointF &origenPantalla) const;
     void dibujarEjes(class QPainter &painter, const QPointF &origenPantalla);
     void dibujarFlecha(class QPainter &painter, const QPointF &desde, const QPointF &hasta, const QColor &color);
     double calcularEscalaAutomatica() const;
 };
 
-#endif 
+#endif
